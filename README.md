@@ -30,6 +30,7 @@ To carry on building on dev with nuxt
 ```
 [ ] Downloaded the Google My Business App?
 [ ] GMB API Key credentials
+[ ] A higher res image (original photo?) of the hero image?
 ```
 
 ## Build Setup for Nuxt
