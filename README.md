@@ -10,11 +10,27 @@ To carry on building on dev with nuxt
 
 ```
     [ ] Nuxt static site build - mirror from yell.com
+        [-] Mobile homepage - Mobile-first markup / styles / behaviour / separate form, header, footer components
+        [ ] Mobile content page - markup / styles / behaviour
+            [ ] Nuxt-ify content pages
+                [ ] About Me
+                [ ] Dog Training
+                [ ] Loveable Rogues Gallery
+                [ ] Testimonials
+                [ ] Contact
+    [ ] Link to other pages / active links
+    [ ] Mobile 'to top' icon for Mobile
+    [ ] Repeat mobile-first for Desktop
+    [ ] Nav active on header and footer
     [ ] Official Docs/Tutorial showing Google Business Review Content - tinyurl.com/yxn6nvb7
+    [ ] Titles and Meta, Favicon
     [ ] Deploy staging to netlify
     [ ] Contact form on Netlify
+    [ ] Alt tags
+    [ ] GDPR cookie accept
+    [ ] Privacy Policy
+    [ ] Add Call to Action for 'View GMB Reviews' on footer (GMB sign in to get short url)
 ```
-
 ## Before and After
 
 ### Before

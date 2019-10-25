@@ -12,7 +12,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "nuxt": "^2.0.0",
+    "nuxt-fontawesome": "^0.4.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^1.0.0",

@@ -8,6 +8,7 @@ yarn-debug.log*
 yarn-error.log*
 logins.txt
 *.mp4
+/design
 
 # Runtime data
 pids

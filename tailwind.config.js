@@ -7,8 +7,21 @@
 module.exports = {
   theme: {
     colors: {
+      transparent: 'transparent',
+
+      black: '#000',
+      white: '#fff',
+      red: '#ff0000',
+
       blue: {
-        100: '#d2efff'
+        100: '#d2efff',
+        200: '#007ecd'  // Border
+      },
+
+      grey: {
+        100: '#fcfcfc',
+        200: '#fdfdfd',
+        300: '#323232'
       }
     }
   },
