@@ -3,23 +3,34 @@
     <section>
       <div>
         <header>
-            <nav class="flex items-center justify-between flex-wrap bg-blue-100 p-3 fixed w-full z-10 top-0 shadow-xl">
+            <nav class="flex items-center justify-between flex-wrap bg-blue-100 p-0 fixed w-full z-10 top-0 shadow-xl">
               <div class="block w-2/5 lg:hidden">
-                <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
-                  <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                <button id="nav-toggle" 
+                        @click="toggleVisibility"
+                        class="flex items-center px-3 py-2 text-gray-500">
+                  <svg class="h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                 </button>
               </div>
               <div class="flex w-3/5 items-center flex-shrink-0 text-white">
-                <a class="text-black no-underline hover:text-white hover:no-underline" href="#">
-                  <img src='~/assets/logo.png' class='outline-none' id='logo'>
-                </a>
+                <div></div>
+                <div>
+                  <a class="text-black no-underline hover:text-white hover:no-underline" href="#">
+                    <img src='~/assets/logo.png' class='mx-auto' id='logo'>
+                  </a>
+                </div>
+                <div></div>
               </div>
 
               <!-- to hide menu, add 'hidden' class -->
-              <div class="w-full hidden flex-grow lg:flex lg:items-center lg:w-auto lg:block pt-6 lg:pt-0" id="nav-content">
-                <ul class="list-reset lg:flex justify-end flex-1 items-center">
-                  <li class="mr-3">
-                    <a class="inline-block py-2 px-4 text-white no-underline" href="#">Home</a>
+              <div  :class="{'hidden': !isUncollapsed}"
+                    class="w-full flex-grow
+                    pt-6
+                    lg:flex lg:items-center lg:w-auto lg:block lg:pt-0 lg:bg-blue-200" 
+                    id="nav-content">
+                <ul class="list-reset lg:flex justify-end 
+                          flex-1 items-center">
+                  <li class="active mr-3">
+                    <a class="inline-block py-2 px-4 no-underline" href="#">Home</a>
                   </li>
                   <li class="mr-3">
                     <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">About Me</a>
@@ -54,6 +65,7 @@
         <img class="mx-auto w-full rounded" src='~/assets/kim_potter_dog_training_reading_berkshire.jpg'>
       </div>
     </section>
+
     <section>
       <div class="p-6 text-center pt-0">
 
@@ -79,8 +91,8 @@
 
     <!-- section.service-features -->
     <section>
-        <div class='p-6 service-features'>
-          <div class='mx-auto bg-blue-100 w-full p-4 pb-12 flex flex-col'>
+        <div class='service-features'>
+          <div class='mx-auto bg-blue-100 w-full p-6 pb-12 flex flex-col'>
             <!-- single service-feature -->
             <div class='service-feature border-l-2 border-r-2 border-b-2 border-t-2 border-gray-600 p-8 text-center flex flex-col'>
               <img src='~/assets/icon-dog.png' class='w-24 mx-auto'>
@@ -231,15 +243,39 @@ export default {
         // document.getElementById("nav-content").classList.toggle("hidden");
       // }
     }
+  },
+  data() {
+    return {
+      example: 'something...',
+      isUncollapsed: false
+    }
+  },
+  methods: {
+    toggleVisibility () {
+      console.log('clicked');
+      this.isUncollapsed = !this.isUncollapsed
+    },
   }
 }
 </script>
 
 <style>
+a {
+  @apply outline-none
+}
+
 #logo {
   width:130px;
   height:48px
 }
+/* Refactor to Component - header */
+#header nav {
+    /* @apply lg:bg-grey-300 */
+}
+#nav-content li.active a {
+  @apply text-blue-200
+}
+/* /Refactor to Component - header */
 
 #home-youtube-embed {
   min-height:30rem;
@@ -250,11 +286,15 @@ export default {
   @apply p-6 bg-grey-200
 }
 #contact-form .row {
-  @apply mb-4 block
+  @apply mb-4 block text-black
 }
 
 #contact-form .row label {
   @apply mb-3 text-xs
+}
+
+#footers {
+  @apply text-black
 }
 
 #contact-form .row input[type=text], #contact-form textarea {
@@ -295,7 +335,12 @@ p {
 }
 
 #footers nav li {
-  @apply text-sm
+  @apply text-sm text-white
+}
+
+
+#footers nav li.active a {
+  @apply text-blue-100
 }
 
 nav li.active {

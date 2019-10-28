@@ -28,7 +28,7 @@ To carry on building on dev with nuxt
     [ ] Contact form on Netlify
     [ ] Alt tags
     [ ] GDPR cookie accept
-    [ ] Privacy Policy
+    [ ] Privacy Policy and Copyright on footer
     [ ] Add Call to Action for 'View GMB Reviews' on footer (GMB sign in to get short url)
 ```
 ## Before and After
