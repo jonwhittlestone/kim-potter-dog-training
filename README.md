@@ -23,10 +23,14 @@ To carry on building on dev with nuxt
     [ ] Repeat mobile-first for Desktop
     [ ] Nav active on header and footer
     [ ] Official Docs/Tutorial showing Google Business Review Content - tinyurl.com/yxn6nvb7
-    [ ] Titles and Meta, Favicon
+    [ ] SEO markup
+        [ ] Titles and Meta 
+        [ ] Favicon
+        [ ] Sitemap with `exclude[]`
+        [ ] Alt tags
+
     [ ] Deploy staging to netlify
     [ ] Contact form on Netlify
-    [ ] Alt tags
     [ ] GDPR cookie accept
     [ ] Privacy Policy and Copyright on footer
     [ ] Add Call to Action for 'View GMB Reviews' on footer (GMB sign in to get short url)
