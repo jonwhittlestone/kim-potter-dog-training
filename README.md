@@ -10,7 +10,8 @@ To carry on building on dev with nuxt
 
 ```
     [ ] Nuxt static site build - mirror from yell.com
-        [-] Mobile homepage - Mobile-first markup / styles / behaviour / separate form, header, footer components
+        [x] Mobile homepage - Mobile-first markup / styles / behaviour / separate header components
+        [ ] Form, footer components
         [ ] Mobile content page - markup / styles / behaviour
             [ ] Nuxt-ify content pages
                 [ ] About Me
