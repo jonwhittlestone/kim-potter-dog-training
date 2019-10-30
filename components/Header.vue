@@ -14,7 +14,7 @@
                     <div></div>
                     <div>
                     <a class="text-black no-underline hover:text-white hover:no-underline" href="#">
-                        <img src='~/assets/logo.png' class='mx-auto' id='logo'>
+                        <nuxt-link to="/"><img src='~/assets/logo.png' class='mx-auto' id='logo'></nuxt-link>
                     </a>
                     </div>
                     <div></div>
@@ -28,26 +28,26 @@
                         id="nav-content">
                     <ul class="list-reset lg:flex justify-end 
                             flex-1 items-center">
-                    <li class="active mr-3">
-                        <a class="inline-block py-2 px-4 no-underline" href="#">Home</a>
-                    </li>
-                    <li class="mr-3">
-                        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">About Me</a>
-                    </li>
-                    <li class="mr-3">
-                        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">Dog Training</a>
-                    </li>
-                    <li class="mr-3">
-                        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">Lovable Rogues Gallery</a>
-                    </li>
+                        <li class="active mr-3">
+                            <nuxt-link to="/" class="inline-block py-2 px-4 no-underline">Home</nuxt-link>
+                        </li>
+                        <li class="mr-3">
+                            <nuxt-link to="/About-Me" class="inline-block py-2 px-4 no-underline">About Me</nuxt-link>
+                        </li>
+                        <li class="mr-3">
+                            <nuxt-link to="/dog-training" class="inline-block py-2 px-4 no-underline">Dog Training</nuxt-link>
+                        </li>
+                        <li class="mr-3">
+                            <nuxt-link to="/gallery" class="inline-block py-2 px-4 no-underline">Loveable Rogues Gallery</nuxt-link>
+                        </li>
 
-                    <li class="mr-3">
-                        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">Testimonials</a>
-                    </li>
+                        <li class="mr-3">
+                            <nuxt-link to="/testimonials" class="inline-block py-2 px-4 no-underline">Testimonials</nuxt-link>
+                        </li>
 
-                    <li class="mr-3">
-                        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">Contact</a>
-                    </li>
+                        <li class="mr-3">
+                            <nuxt-link to="/contact" class="inline-block py-2 px-4 no-underline">Contact</nuxt-link>
+                        </li>
                     </ul>
                 </div>
                 </nav>

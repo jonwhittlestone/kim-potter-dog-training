@@ -5,7 +5,7 @@
       <div class='main-content mt-16 p-6 text-center'>
         <h1 class="text-3xl font-extrabold leading-normal">Professional Dog Behaviourist offering home visits in Reading, Berkshire, Thames Valley, Oxford &amp; London</h1>
 
-        <button class='primary'>About Me</button>
+        <button class='primary'><nuxt-link to="/About-Me">About Me</nuxt-link></button>
 
         <img class="mx-auto w-full rounded" src='~/assets/kim_potter_dog_training_reading_berkshire.jpg'>
       </div>
@@ -32,6 +32,50 @@
               allowfullscreen></iframe>
 
       </div>
+    </section>
+
+    <!-- section.service-features -->
+    <section>
+        <div class='service-features'>
+          <div class='mx-auto bg-blue-100 w-full p-6 pb-12 flex flex-col'>
+            <!-- single service-feature -->
+            <div class='service-feature border-l-2 border-r-2 border-b-2 border-t-2 border-gray-600 p-8 text-center flex flex-col'>
+              <img src='~/assets/icon-dog.png' class='w-24 mx-auto'>
+              <h3 class='text-blue-200 font-bold'>I have over 20 years of experience as a professional trainer</h3>
+            </div>
+
+            <!-- single service-feature -->
+            <div class='service-feature border-l-2 border-r-2 border-b-2 border-gray-600 p-8 text-center flex flex-col'>
+              <img src='~/assets/icon-walkies.png' class='w-24 mx-auto'>
+              <h3 class='text-black font-bold'>I can help customers with difficult dogs that might be rehomed or put down</h3>
+            </div>
+
+            <!-- single service-feature -->
+            <div class='service-feature border-l-2 border-r-2 border-b-2 border-gray-600 p-8 text-center flex flex-col'>
+              <img src='~/assets/icon-pawprint.png' class='w-24 mx-auto'>
+              <h3 class='text-blue-200 font-bold'>I have worked throughout the UK and Europe</h3>
+            </div>
+
+            <!-- single service-feature -->
+            <div class='service-feature border-l-2 border-r-2 border-b-2 border-gray-600 p-8 text-center flex flex-col'>
+              <img src='~/assets/icon-fetch.png' class='w-24 mx-auto'>
+              <h3 class='text-black font-bold'>I offer home visits for your convenience</h3>
+            </div>
+
+          </div>
+
+            <div class='hen-banner text-center'>
+              <div class='cover bg-fixed p-16'><h4>&nbsp;</h4></div>
+              <div class='service-outline bg-white px-4'>
+                  <h2 class="p-3">Your dog needs to fit in with your lifestyle!</h2>
+                  <p>
+                    We need to know how to communicate our wishes to them and how to change their behaviours which get them into trouble. With this in mind, I provide home visits throughout Berkshire, Oxfordshire, Thames Valley and London, specialising in one-to-one personalised dog training sessions at your home and walking areas to suit your specific needs.
+                  </p>
+
+                  <button class='secondary'>Give me a call</button>
+              </div>
+            </div> <!-- / .hen-banner -->
+        </div> 
     </section>
 
   </div>
@@ -107,47 +151,9 @@ div.service-features .service-feature {
   @apply border-blue-200 bg-white
 }
 
-
-
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
 .container {
   /* Migrate this to html */
   font-size:16px
-
-  /* margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; */
 }
 
-header {
-  /* font-size:0.625rem */
-}
-.title {
-  /* font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px; */
-}
-
-.subtitle {
-  /* font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px; */
-}
-
-.links {
-  /* padding-top: 15px; */
-}
 </style>

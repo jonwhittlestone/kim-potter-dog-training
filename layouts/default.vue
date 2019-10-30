@@ -4,6 +4,8 @@
     <!-- page -->
     <nuxt />
 
+    <KeywordBanner />
+
     <!-- section.footers - separate this to component -->
     <section id="footers" class="bg-black text-white">
       <div id='contact-form'>
@@ -99,10 +101,18 @@
 
 <script>
 import Header from '~/components/Header.vue'
+import KeywordBanner from '~/components/KeywordBanner.vue'
 
 export default {
   components: {
-    Header
+    Header, KeywordBanner
+  },
+  methods:{
+    isPage(name) {
+      if (this.$route.name == name) {
+        return true;
+      }
+    }
   },
   asyncData() {},
   data() {
@@ -112,8 +122,36 @@ export default {
 </script>
 
 <style>
+
+h2, h2.primary {
+  @apply text-2xl text-blue-200 font-extrabold
+}
+
+h2.secondary {
+  @apply text-black
+}
+
+p {
+  @apply text-sm
+}
+
 a {
   @apply outline-none
+}
+
+nav li.active {
+  @apply text-blue-100
+}
+
+button {
+  @apply text-sm p-3 px-12 text-white m-3
+}
+button.primary, button.secondary:hover {
+  @apply bg-blue-200 
+}
+
+button.primary:hover, button.secondary {
+  @apply bg-black
 }
 
 .main-content {
@@ -169,13 +207,6 @@ a {
   @apply underline
 }
 
-h2 {
-  @apply text-2xl text-blue-200 font-extrabold
-}
-
-p {
-  @apply text-sm
-}
 
 #footers nav li {
   @apply text-sm text-white
@@ -186,36 +217,10 @@ p {
   @apply text-blue-100
 }
 
-nav li.active {
-  @apply text-blue-100
-}
-
-button {
-  @apply text-sm p-3 px-12 text-white m-3
-}
-button.primary, button.secondary:hover {
-  @apply bg-blue-200 
-}
-
-button.primary:hover, button.secondary {
-  @apply bg-black
-}
 
 div.service-features .hen-banner .cover {
   background-image: url('~assets/hen.png');
   @apply bg-scroll bg-no-repeat bg-cover bg-center border-none
-}
-
-.founded-banner {
-  background-image: url('~assets/pawbg.png');
-  background-color: rgba(0,126,205,1);
-  background-repeat: no-repeat;
-  background-size:cover;
-
-  @apply text-center pt-6 pb-6
-}
-.founded-banner h2 {
-  @apply p-0 text-xl font-bold text-white
 }
 
 section.contact-form div {
