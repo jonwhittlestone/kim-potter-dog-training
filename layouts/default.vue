@@ -135,6 +135,10 @@ p {
   @apply text-sm
 }
 
+p a {
+  @apply underline
+}
+
 a {
   @apply outline-none
 }

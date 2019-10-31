@@ -14,8 +14,8 @@ To carry on building on dev with nuxt
         [ ] Form, footer components
         [ ] Mobile content page - markup / styles / behaviour
             [ ] Nuxt-ify content pages
-                [ ] About Me
-                [ ] Dog Training
+                [x] About Me
+                [x] Dog Training
                 [ ] Loveable Rogues Gallery
                 [ ] Testimonials
                 [ ] Contact
