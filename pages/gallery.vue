@@ -11,7 +11,7 @@
                     <li v-for="(image, index) in images"
                         style="display:inline-block"
                         @click="openGallery(index)"
-                        class="cursor-pointer w-1/4 p-4"
+                        class="cursor-pointer w-1/3 p-2"
                     >
                         <img
                             v-lazy="image.src"
