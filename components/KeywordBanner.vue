@@ -11,6 +11,12 @@
                     <div v-show="isPage('About-Me')">
                     <h2>Call me on 07941 392 521 to find out more about my dog training work.</h2>
                     </div>
+
+                    <div v-show="isPage('gallery')">
+                    <h2>Call me on 07941 392 521 to find out more about my dog behaviour services.</h2>
+
+                    </div>
+
                 </div>
             </div>
         </section>

@@ -16,13 +16,14 @@ To carry on building on dev with nuxt
             [ ] Nuxt-ify content pages
                 [x] About Me
                 [x] Dog Training
-                [ ] Loveable Rogues Gallery
+                [x] Loveable Rogues Gallery
+                    [x]  Lightbox Component
                 [ ] Testimonials
                 [ ] Contact
-    [ ] Link to other pages / active links
+    [ ] Link to other pages
     [ ] Mobile 'to top' icon for Mobile
     [ ] Repeat mobile-first for Desktop
-    [ ] Nav active on header and footer
+    [ ] Nav active class on header and footer
     [ ] Official Docs/Tutorial showing Google Business Review Content - tinyurl.com/yxn6nvb7
     [ ] SEO markup
         [ ] Titles and Meta 
