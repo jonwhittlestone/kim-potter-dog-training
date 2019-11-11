@@ -18,9 +18,9 @@ To carry on building on dev with nuxt
                 [x] Dog Training
                 [x] Loveable Rogues Gallery
                     [x]  Lightbox Component
-                [ ] Testimonials
-                [ ] Contact
-    [ ] Link to other pages
+                [x] Testimonials
+                [x] Contact
+    [x] Link to other pages
     [ ] Mobile 'to top' icon for Mobile
     [ ] Repeat mobile-first for Desktop
     [ ] Nav active class on header and footer
@@ -32,10 +32,13 @@ To carry on building on dev with nuxt
         [ ] Alt tags
 
     [ ] Deploy staging to netlify
-    [ ] Contact form on Netlify
+    [ ] Contact form on Netlify with Thank-you msg
     [ ] GDPR cookie accept
     [ ] Privacy Policy and Copyright on footer
     [ ] Add Call to Action for 'View GMB Reviews' on footer (GMB sign in to get short url)
+    [x] BUG [CSS] banner images backgrounds are bg-scroll when should be fixed
+    [ ] Questions for Kim
+        [ ] Do you want your VAT and Company Reg number on Contact page?
 ```
 ## Before and After
 
@@ -50,7 +53,6 @@ To carry on building on dev with nuxt
 
 ## Questions for Kim
 ```
-[ ] Downloaded the Google My Business App?
 [ ] GMB API Key credentials
 [ ] A higher res image (original photo?) of the hero image?
 ```

@@ -20,7 +20,7 @@
             </div>
             <!-- Mobile full width cover/banner -->
             <div class='mobile-banner reasons'>
-                <div class="cover bg-fixed"><h4>&nbsp;</h4></div>
+                <div class="cover"><h4>&nbsp;</h4></div>
             </div>
             <div class="reasons-list-container p-6">
                 <h2 class="secondary pb-4">What can Kim Potter do for you and your dog?</h2>
@@ -49,7 +49,7 @@
                 <nuxt-link to="/contact"><button class="primary">Contact</button></nuxt-link>
             </div>
             <div class='mobile-banner scarf'>
-                <div class="cover bg-fixed"><h4>&nbsp;</h4></div>
+                <div class="cover"><h4>&nbsp;</h4></div>
             </div>
         </section>
 
@@ -65,15 +65,17 @@
     @apply text-sm
 }
 .mobile-banner .cover {
-    @apply bg-scroll bg-no-repeat bg-cover bg-top border-none p-24
+    @apply bg-no-repeat bg-cover bg-top border-none p-24
 }
 .mobile-banner.reasons .cover {
+    background-position: 50% 22% !important;
     background-image:url('~assets/cat.jpg');
 }
 
 .mobile-banner.scarf .cover {
+    background-position: 50% 15% !important;
     background-image:url('~assets/scarf.jpg');
-    @apply p-20
+    @apply p-32
 }
 
 .testimonial {

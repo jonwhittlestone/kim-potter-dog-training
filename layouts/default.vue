@@ -64,7 +64,7 @@
           Postcode: RG10 8HL
         </div>
         <div class="w-1/2 text-right">
-          <a href=":+44 7941 392 521">07941 392 521</a><br>
+          <a href="tel: +44 7941 392 521">07941 392 521</a><br>
           <a href="mailto:caninetrainerkp@gmail.com" class="underline hover:no-underline">caninetrainerkp@gmail.com</a>
         </div>
       </div>
@@ -160,6 +160,14 @@ button.primary:hover, button.secondary {
 
 .main-content {
   @apply mt-16
+}
+
+.testimonial {
+    @apply mt-4 italic text-sm
+}
+
+.testimonial .author {
+    @apply not-italic
 }
 
 #home-youtube-embed {

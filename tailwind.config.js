@@ -22,8 +22,10 @@ module.exports = {
       grey: {
         100: '#fcfcfc',
         200: '#fdfdfd',
-        300: '#323232'
+        300: '#323232',
+        // 600: '#f2f5f7'
       }
+      
     }
   },
   variants: {},

@@ -14,7 +14,7 @@
             </div>
             <!-- Mobile full width cover/banner -->
             <div class='reasons-banner'>
-                <div class="cover bg-fixed"><h4>&nbsp;</h4></div>
+                <div class="cover"><h4>&nbsp;</h4></div>
             </div>
             <div class="reasons-list-container p-6">
                 <h2 class="secondary pb-4">Why rely on me as your dog trainer?</h2>
@@ -56,10 +56,8 @@
 }
 .reasons-banner .cover {
     background-image:url('~assets/about_banner_196x248.jpg');
-    @apply bg-scroll bg-no-repeat bg-cover bg-center border-none p-24
+    background-position: 50% 42% !important;
+    @apply bg-scroll bg-no-repeat bg-center border-none bg-cover pt-12 pb-64
 }
 
-.testimonial {
-    @apply mt-4 italic text-sm
-}
 </style>

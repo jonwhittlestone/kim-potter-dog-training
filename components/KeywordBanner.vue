@@ -2,7 +2,7 @@
     <div>
         <section>
             <div class="service-features">
-                <div class='keyword-banner p-12'>
+                <div class='keyword-banner p-12' v-show="!isPage('contact')">
                     <div v-show="isPage('index') || isPage('dog-training')">
                     <h2 class="mb-2">Kim Potter (Dedicated to Dogs) was founded in 1995.</h2>
                     <h2>Call me on 07941 392 521 to discuss your pet's requirements.</h2>
@@ -14,7 +14,10 @@
 
                     <div v-show="isPage('gallery')">
                     <h2>Call me on 07941 392 521 to find out more about my dog behaviour services.</h2>
+                    </div>
 
+                    <div v-show="isPage('testimonials')">
+                    <h2>Contact me on 07941 392 521 to find out more about my dog training.</h2>
                     </div>
 
                 </div>
