@@ -21,9 +21,11 @@ To carry on building on dev with nuxt
                 [x] Testimonials
                 [x] Contact
     [x] Link to other pages
-    [ ] Mobile 'to top' icon for Mobile
+    [x] Scroll 'to top' icon
     [ ] Repeat mobile-first for Desktop
     [ ] Nav active class on header and footer
+    [ ] Close mobile menu when clicked
+    [ ] Desktop addthis style sharer icons
     [ ] Official Docs/Tutorial showing Google Business Review Content - tinyurl.com/yxn6nvb7
     [ ] SEO markup
         [ ] Titles and Meta 
