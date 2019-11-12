@@ -66,7 +66,6 @@ export default {
     }, 
     methods: {
         toggleVisibility () {
-            console.log('clicked');
             this.isUncollapsed = !this.isUncollapsed
         },
     }

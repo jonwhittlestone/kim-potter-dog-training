@@ -4,6 +4,10 @@
     <!-- page -->
     <nuxt />
 
+    <div @click="scrollToTop" class="scroll-icon-container cursor-pointer text-right pr-8 pb-8 z-10 text-4xl sticky w-24 ml-auto">
+      <font-awesome-icon :icon="['far', 'arrow-alt-circle-up']" class="text-green-100"/>
+    </div>
+
     <KeywordBanner />
 
     <!-- section.footers - separate this to component -->
@@ -91,10 +95,11 @@
 
             <ul class="flex justify-center flex-row wrap">
               <li class="active"><a href="">Privacy and Cookie Policy</a></li>
-              <li>Powered by <a href="https://howapped.com">HowApped</a></li>
+              <li>Software Development by <a href="https://howapped.com">HowApped</a></li>
             </ul>
           </nav>
       </div>
+
     </section> <!-- /.footers -->
   </div>
 </template>
@@ -112,6 +117,9 @@ export default {
       if (this.$route.name == name) {
         return true;
       }
+    },
+    scrollToTop() {
+      window.scrollTo({ top:0, behavior: 'smooth' })
     }
   },
   asyncData() {},
@@ -160,6 +168,10 @@ button.primary:hover, button.secondary {
 
 .main-content {
   @apply mt-16
+}
+
+.scroll-icon-container {
+  top:85%
 }
 
 .testimonial {

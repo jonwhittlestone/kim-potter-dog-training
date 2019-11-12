@@ -13,7 +13,9 @@ module.exports = {
       black: '#000',
       white: '#fff',
       red: '#ff0000',
-
+      green: {
+        100: '#7f9e72'
+      },
       blue: {
         100: '#d2efff',
         200: '#007ecd'  // Border
@@ -24,7 +26,8 @@ module.exports = {
         200: '#fdfdfd',
         300: '#323232',
         // 600: '#f2f5f7'
-      }
+      },
+
       
     }
   },

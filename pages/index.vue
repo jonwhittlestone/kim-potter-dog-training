@@ -65,7 +65,7 @@
           </div>
 
             <div class='hen-banner text-center'>
-              <div class='cover bg-fixed p-16'><h4>&nbsp;</h4></div>
+              <div class='cover p-16'><h4>&nbsp;</h4></div>
               <div class='service-outline bg-white px-4'>
                   <h2 class="p-3">Your dog needs to fit in with your lifestyle!</h2>
                   <p>
