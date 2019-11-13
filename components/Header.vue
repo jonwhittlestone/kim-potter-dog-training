@@ -11,7 +11,7 @@
                         </button>
                     </div>
                     <div class="logo-container md:w-full md:text-center md:text-black md:p-6">
-                        <div class="left-of-logo md:w-1/3 md:text-left">
+                        <div class="left-of-logo ">
                             <div class=""><a href="mailto:caninetrainerkp@gmail.com">caninetrainerkp@gmail.com</a></div>
                             <div class="xs:hidden"><b>07941 392 521</b></div>
                         </div>
@@ -22,7 +22,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="right-of-logo md:w-1/3">
+                        <div class="right-of-logo">
                            <div><em>"Dedicated to dogs"</em></div>
                         </div>
                     </div>
@@ -31,28 +31,28 @@
                 <div  :class="{'hidden': !isUncollapsed}"
                         class="w-full flex-grow
                         pt-6
-                        lg:flex lg:items-center lg:w-auto lg:block lg:pt-0 lg:bg-blue-200" 
+                        md:flex md:items-center md:w-auto md:block md:pt-0 md:bg-blue-200" 
                         id="nav-content">
-                    <ul class="list-reset lg:flex justify-end 
+                    <ul class="list-reset md:flex md:justify-center 
                             flex-1 items-center">
-                        <li class="active mr-3">
+                        <li class="active lg:mr-3">
                             <nuxt-link to="/" class="inline-block py-2 px-4 no-underline">Home</nuxt-link>
                         </li>
-                        <li class="mr-3">
+                        <li class="lg:mr-3">
                             <nuxt-link to="/About-Me" class="inline-block py-2 px-4 no-underline">About Me</nuxt-link>
                         </li>
-                        <li class="mr-3">
+                        <li class="lg:mr-3">
                             <nuxt-link to="/dog-training" class="inline-block py-2 px-4 no-underline">Dog Training</nuxt-link>
                         </li>
-                        <li class="mr-3">
+                        <li class="lg:mr-3">
                             <nuxt-link to="/gallery" class="inline-block py-2 px-4 no-underline">Loveable Rogues Gallery</nuxt-link>
                         </li>
 
-                        <li class="mr-3">
+                        <li class="lg:mr-3">
                             <nuxt-link to="/testimonials" class="inline-block py-2 px-4 no-underline">Testimonials</nuxt-link>
                         </li>
 
-                        <li class="mr-3">
+                        <li class="lg:mr-3">
                             <nuxt-link to="/contact" class="inline-block py-2 px-4 no-underline">Contact</nuxt-link>
                         </li>
                     </ul>
@@ -86,28 +86,35 @@ export default {
 }
 
 nav {
-    @screen sm {
-        @apply flex items-center justify-between 
-        flex-wrap bg-blue-100 p-0 fixed w-full z-10 
-        top-0 shadow-xl
-    }
-    /* iPad Portrait = md */
-    @screen md {
-        @apply shadow-2xl    
-    }
+    @apply flex items-center justify-between 
+    flex-wrap bg-blue-100 p-0 fixed w-full z-10 
+    top-0 shadow-xl
 }
 
-.logo-container {
-    @screen sm {
-        @apply flex w-3/5 items-center flex-shrink-0 text-white
-    }
-
-    @screen md {
-
-    }
+.left-of-logo, .right-of-logo {
+    @apply hidden
 }
 
 #nav-content li.active a {
     @apply text-blue-200
 }
+
+.logo-container { @apply flex w-3/5 items-center flex-shrink-0 text-white }
+
+@screen md {
+    nav {}
+    .left-of-logo { @apply block w-1/3 text-left }
+    .right-of-logo { @apply block w-1/3 }
+    #nav-content li a { @apply text-white}
+    #nav-content li.active a { @apply text-black}
+}
+
+.logo-container {
+    @screen sm {}
+
+    @screen md {}
+}
+
+
+
 </style>
