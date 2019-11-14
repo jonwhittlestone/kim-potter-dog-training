@@ -2,7 +2,7 @@
     <div>
         <section>
             <div class="service-features">
-                <div class='keyword-banner p-12' v-show="!isPage('contact')">
+                <div class='keyword-banner' v-show="!isPage('contact')">
                     <div v-show="isPage('index') || isPage('dog-training')">
                     <h2 class="mb-2">Kim Potter (Dedicated to Dogs) was founded in 1995.</h2>
                     <h2>Call me on 07941 392 521 to discuss your pet's requirements.</h2>
@@ -46,7 +46,7 @@ export default {
   background-repeat: no-repeat;
   background-size:cover;
 
-  @apply text-center pt-6 pb-6
+  @apply text-center pt-10 pb-10
 }
 .keyword-banner h2 {
   @apply p-0 text-xl font-bold text-white

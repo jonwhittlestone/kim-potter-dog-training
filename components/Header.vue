@@ -103,10 +103,15 @@ nav {
 
 @screen md {
     nav {}
-    .left-of-logo { @apply block w-1/3 text-left }
-    .right-of-logo { @apply block w-1/3 }
+    #logo {width:95% !important; height:95% !important}
+    .left-of-logo { @apply block w-1/3 text-left font-bold }
+    .right-of-logo { @apply block w-1/3 font-bold }
     #nav-content li a { @apply text-white}
     #nav-content li.active a { @apply text-black}
+}
+
+@screen xl {
+    #nav-content li { @apply text-lg p-2 }
 }
 
 .logo-container {

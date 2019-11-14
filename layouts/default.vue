@@ -4,7 +4,7 @@
     <!-- page -->
     <nuxt />
 
-    <div @click="scrollToTop" class="scroll-icon-container cursor-pointer text-right pr-8 pb-8 z-10 text-4xl sticky w-24 ml-auto">
+    <div @click="scrollToTop" class="scroll-icon-container cursor-pointer text-right pr-4 pb-8 z-10 text-4xl sticky w-24 ml-auto">
       <font-awesome-icon :icon="['far', 'arrow-alt-circle-up']" class="text-green-100"/>
     </div>
 
@@ -14,17 +14,19 @@
     <section id="footers" class="bg-black text-white">
       <div id='contact-form'>
         <form>
-          <div class="row">
-            <label for="input-name">Name</label>
-            <input type="text" name="input-name" id="input-name">
-          </div> 
-          <div class="row">
-            <label for="input-email">Email</label>
-            <input type="text" name="input-email" id="input-email">
-          </div>
-          <div class="row">
-            <label for="input-phone">Phone</label>
-            <input type="text" name="input-phone" id="input-phone">
+          <div class='grouped-contact-details'>
+            <div class="row">
+              <label for="input-name">Name</label>
+              <input type="text" name="input-name" id="input-name">
+            </div> 
+            <div class="row">
+              <label for="input-email">Email</label>
+              <input type="text" name="input-email" id="input-email">
+            </div>
+            <div class="row">
+              <label for="input-phone">Phone</label>
+              <input type="text" name="input-phone" id="input-phone">
+            </div>
           </div>
           <div class="row">
             <label for="input-message">Message</label>
@@ -34,7 +36,7 @@
             <button class="primary w-3/4">Send</button>
           </div>
         </form>
-        <div id="contact-review-box" class="bg-white">
+        <div id="contact-review-box" class="">
           <dl class="list text-xs p-6">
             <dt class="inline">Average Rating:</dt>
             <dd class="inline mr-4 font-bold">N/A</dd>
@@ -46,7 +48,7 @@
       </div>
 
       <div id="footers__call-to-action" class="p-6">
-        <button class="primary w-full flex border border-white p-0 m-0 p-3">
+        <button class="btn-email-us primary ">
           <div class="w-1/5 text-left text-xl">
             <font-awesome-icon :icon="['fas', 'envelope']"/>
           </div>
@@ -131,6 +133,7 @@ export default {
 
 <style>
 
+body {@apply text-base}
 h2, h2.primary {
   @apply text-2xl text-blue-200 font-extrabold
 }
@@ -166,13 +169,33 @@ button.primary:hover, button.secondary {
   @apply bg-black
 }
 
-.main-content {
-  @apply mt-16
+.main-content { @apply p-6 mt-16 }
+
+.btn-email-us { @apply w-full flex border border-white p-0 m-0 p-3 }
+#footers__call-to-action h2 { @apply text-left }
+
+@screen md {
+   html {@apply text-lg}
+   #nav-content { @apply text-sm shadow-xl}
+  .main-content { @apply mt-40 px-6 }
+  .row {@apply flex justify-between}
+  .row > .col { @apply flex-1}
+  .scroll-icon-container {@apply hidden}
+  .grouped-contact-details { @apply flex justify-between }
+  .grouped-contact-details .row {@apply w-1/3 p-3}
+  .btn-email-us { @apply hidden }
+  #footers__call-to-action h2 { @apply text-center }
 }
 
-.scroll-icon-container {
-  top:85%
+@screen lg {
+  .main-content { @apply mt-40 }
 }
+
+@screen xl {
+  .main-content { @apply mt-56 }
+}
+
+.scroll-icon-container {top:85%}
 
 .testimonial {
     @apply mt-4 italic text-sm
@@ -188,7 +211,7 @@ button.primary:hover, button.secondary {
 }
 
 #contact-form {
-  @apply p-6 bg-grey-200
+  @apply p-6 bg-grey-200 text-black
 }
 #contact-form .row {
   @apply mb-4 block text-black
@@ -231,16 +254,13 @@ button.primary:hover, button.secondary {
   @apply underline
 }
 
-
 #footers nav li {
   @apply text-sm text-white
 }
 
-
 #footers nav li.active a {
   @apply text-blue-100
 }
-
 
 div.service-features .hen-banner .cover {
   background-image: url('~assets/hen.png');
@@ -251,52 +271,9 @@ section.contact-form div {
   @apply bg-grey-100
 }
 
-
 div.service-features .service-feature {
   @apply border-blue-200 bg-white
 }
 
 
-
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  /* Migrate this to html */
-  font-size:16px
-
-  /* margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; */
-}
-
-header {
-  /* font-size:0.625rem */
-}
-.title {
-  /* font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px; */
-}
-
-.subtitle {
-  /* font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px; */
-}
-
-.links {
-  /* padding-top: 15px; */
-}
 </style>
