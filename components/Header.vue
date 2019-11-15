@@ -102,7 +102,16 @@ nav {
 .logo-container { @apply flex w-3/5 items-center flex-shrink-0 text-white }
 
 @screen md {
-    nav {}
+    nav {
+        /* background-image: url('~assets/pawbg.png'); */
+
+        background-image: url('/img/nav_paws_bg_md.png');
+        /* background-color: rgba(0,126,205,1); */
+        background-repeat: no-repeat;
+        background-size:cover;
+
+        /* @apply bg-cover bg-no-repeat */
+    }
     #logo {width:95% !important; height:95% !important}
     .left-of-logo { @apply block w-1/3 text-left font-bold }
     .right-of-logo { @apply block w-1/3 font-bold }
