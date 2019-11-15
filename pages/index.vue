@@ -5,7 +5,7 @@
       <div class='main-content text-center'>
         <div class="row">
           <div class="col">
-            <h1 class="text-3xl font-extrabold leading-normal">Professional Dog Behaviourist offering home visits in Reading, Berkshire, Thames Valley, Oxford &amp; London</h1>
+            <h1>Professional Dog Behaviourist offering home visits in Reading, Berkshire, Thames Valley, Oxford &amp; London</h1>
             <button class='primary'><nuxt-link to="/About-Me">About Me</nuxt-link></button>
           </div>
           <div class="col">
@@ -19,7 +19,7 @@
     <section class='marketing-summary'>
       <div class="p-6 text-center pt-0">
         <div class='row'>
-          <div class="col summary">
+          <div class="col summary copy">
             <h2>Professional dog trainer</h2>
             <p class="p-2">
               As a professional dog behaviourist and trainer, with over 25 years' experience, I am truly dedicated to dogs. Welcome to my website. Dogs are such fun, so intelligent, loving and loyal - and they ask so little from us.
@@ -139,15 +139,14 @@ section.contact-form div { @apply bg-grey-100 }
   h1 {@apply text-left}
   section.hero button.primary {@apply float-left ml-auto}
   section.marketing-summary .summary { @apply text-left }
-  section.marketing-summary p { @apply text-lg }
-  section.marketing-summary .video { @apply pl-4 }
+  section.marketing-summary .video {  }
   div.services-features-inner { @apply flex-row }
   .service-feature { @apply w-1/4 mr-4 border-b-2 }
   .service-feature:last-child { @apply mr-0 }
   .hen-banner { @apply flex }
   .hen-banner .cover, .hen-banner .service-outline { @apply w-1/2 }
   .hen-banner .service-outline { @apply text-left py-8 }
-
 }
+
 
 </style>

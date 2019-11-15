@@ -134,6 +134,8 @@ export default {
 <style>
 
 body {@apply text-base}
+
+h1 { @apply text-2xl p-8 pt-0 font-extrabold leading-normal}
 h2, h2.primary {
   @apply text-2xl text-blue-200 font-extrabold
 }
@@ -174,10 +176,20 @@ button.primary:hover, button.secondary {
 .btn-email-us { @apply w-full flex border border-white p-0 m-0 p-3 }
 #footers__call-to-action h2 { @apply text-left }
 
+.col.desktop-img-container { @apply hidden }
+.col.banner {@apply hidden}
+
 @screen md {
    html {@apply text-lg}
    #nav-content { @apply text-sm shadow-xl}
-  .main-content { @apply mt-40 px-6 }
+   section.hero .main-content {@apply mt-48}
+   .col.desktop-img-container { @apply block}
+   .col.copy {@apply text-left}
+   .col.copy:first-child {@apply pr-4 }
+   .col.copy:last-child {@apply pl-4 }
+  .col.copy p { @apply text-lg }
+   h1 { @apply text-3xl p-8 pt-0 font-extrabold leading-normal}
+  .main-content { @apply px-6 }
   .row {@apply flex justify-between}
   .row > .col { @apply flex-1}
   .scroll-icon-container {@apply hidden}
@@ -185,14 +197,17 @@ button.primary:hover, button.secondary {
   .grouped-contact-details .row {@apply w-1/3 p-3}
   .btn-email-us { @apply hidden }
   #footers__call-to-action h2 { @apply text-center }
+
+  .mobile-banner {@apply hidden}
+  .col.banner {@apply block}
 }
 
 @screen lg {
-  .main-content { @apply mt-40 }
+  section.hero .main-content {@apply mt-48 px-16}
 }
 
 @screen xl {
-  .main-content { @apply mt-56 }
+  section.hero .main-content {@apply mt-64 px-32}
 }
 
 .scroll-icon-container {top:85%}

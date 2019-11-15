@@ -23,6 +23,7 @@ To carry on building on dev with nuxt
     [x] Link to other pages
     [x] Scroll 'to top' icon
     [ ] Repeat mobile-first for Desktop
+    [ ] paw Backgrounds for Desktop
     [ ] Nav active class on header and footer
     [ ] Close mobile menu when clicked
     [ ] Desktop addthis style sharer icons
