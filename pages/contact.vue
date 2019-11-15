@@ -1,6 +1,6 @@
 <template>
       <div>
-        <section class='text-center'>
+        <section class='hero text-center'>
             <!-- Mobile full width cover/banner -->
             <div class='reasons-banner'>
                 <div class="cover"><span>&nbsp;</span></div>
@@ -41,10 +41,23 @@ export default {
 p {
     @apply mb-4
 }
+
 .reasons-banner .cover {
     background-image:url('/img/kim_potter_dog_training_happy_dog_fetch.jpg');
     background-position: 50% 42% !important;
     @apply bg-scroll bg-no-repeat bg-center border-none bg-cover pt-12 pb-64
+}
+
+@screen md {
+    .reasons-banner {@apply mt-10}
+}
+
+@screen lg {
+    .reasons-banner {@apply mt-20}
+}
+
+@screen xl {
+    .reasons-banner {@apply mt-40}
 }
 
 </style>

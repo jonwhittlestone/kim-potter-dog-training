@@ -111,7 +111,7 @@ nav {
 }
 
 @screen xl {
-    #logo {width:85% !important; height:85% !important}
+    #logo {width:80% !important; height:80% !important}
     #nav-content li { @apply text-lg p-2 }
 }
 

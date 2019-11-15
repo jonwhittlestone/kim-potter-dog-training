@@ -1,6 +1,6 @@
 <template>
   <div>
-        <section class='text-center'>
+        <section class='hero text-center'>
             <div class="main-content p-6">
                 <h1 class="text-2xl pt-0 p-8 font-extrabold leading-normal">Assisting with your dog behavioural and training issues</h1>
                 <p>
