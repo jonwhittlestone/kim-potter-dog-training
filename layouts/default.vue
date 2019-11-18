@@ -1,6 +1,6 @@
 <template>
   <div class="w-full text-base font-sans">
-    <Header />
+    <the-header />
     <!-- page -->
     <nuxt />
 
@@ -119,12 +119,12 @@
 </template>
 
 <script>
-import Header from '~/components/Header.vue'
+import TheHeader from '~/components/TheHeader.vue'
 import KeywordBanner from '~/components/KeywordBanner.vue'
 
 export default {
   components: {
-    Header, KeywordBanner
+   TheHeader, KeywordBanner
   },
   methods:{
     isPage(name) {
@@ -140,6 +140,9 @@ export default {
   data() {
     return {}
   },
+  mounted() {
+      console.log('hi');
+  }
 }
 </script>
 

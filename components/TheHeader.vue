@@ -28,7 +28,8 @@
                     </div>
 
                 <!-- to hide menu, add 'hidden' class -->
-                <div  :class="{'hidden': !isUncollapsed}"
+                <div 
+                        :class="{'hidden': !isUncollapsed, 'flex': isUncollapsed}"
                         class="w-full flex-grow
                         pt-6
                         md:flex md:items-center md:w-auto md:block md:pt-0 md:bg-blue-200" 
@@ -36,24 +37,35 @@
                     <ul class="list-reset md:flex md:justify-center 
                             flex-1 items-center">
                         <li class=" lg:mr-3">
-                            <nuxt-link to="/" exact class="inline-block py-2 px-4 no-underline ">Home</nuxt-link>
+                            <nuxt-link to="/" 
+                            exact 
+                            @click.native="isUncollapsed = false"
+                            class="inline-block py-2 px-4 no-underline ">Home</nuxt-link>
                         </li>
                         <li class="lg:mr-3">
-                            <nuxt-link to="/About-Me" class="inline-block py-2 px-4 no-underline">About Me</nuxt-link>
+                            <nuxt-link to="/About-Me" 
+                            @click.native="isUncollapsed = false"
+                            class="inline-block py-2 px-4 no-underline">About Me</nuxt-link>
                         </li>
                         <li class="lg:mr-3">
-                            <nuxt-link to="/dog-training" class="inline-block py-2 px-4 no-underline">Dog Training</nuxt-link>
+                            <nuxt-link to="/dog-training" 
+                            @click.native="isUncollapsed = false"
+                            class="inline-block py-2 px-4 no-underline">Dog Training</nuxt-link>
                         </li>
                         <li class="lg:mr-3">
-                            <nuxt-link to="/gallery" class="inline-block py-2 px-4 no-underline">Loveable Rogues Gallery</nuxt-link>
+                            <nuxt-link to="/gallery" 
+                            @click.native="isUncollapsed = false"
+                            class="inline-block py-2 px-4 no-underline">Loveable Rogues Gallery</nuxt-link>
                         </li>
-
                         <li class="lg:mr-3">
-                            <nuxt-link to="/testimonials" class="inline-block py-2 px-4 no-underline">Testimonials</nuxt-link>
+                            <nuxt-link to="/testimonials" 
+                            @click.native="isUncollapsed = false"
+                            class="inline-block py-2 px-4 no-underline">Testimonials</nuxt-link>
                         </li>
-
                         <li class="lg:mr-3">
-                            <nuxt-link to="/contact" class="inline-block py-2 px-4 no-underline">Contact</nuxt-link>
+                            <nuxt-link to="/contact" 
+                            @click.native="isUncollapsed = false"
+                            class="inline-block py-2 px-4 no-underline">Contact</nuxt-link>
                         </li>
                     </ul>
                 </div>
@@ -67,7 +79,7 @@
 export default {
     data() {
         return {
-            isUncollapsed: false
+            isUncollapsed: this.isUncollapsed
         }
     }, 
     methods: {
