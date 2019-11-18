@@ -40,8 +40,8 @@ To carry on building on dev with nuxt
     [ ] Privacy Policy and Copyright on footer
     [ ] Add Call to Action for 'View GMB Reviews' on footer (GMB sign in to get short url)
     [x] BUG [CSS] banner images backgrounds are bg-scroll when should be fixed
-    [ ] Questions for Kim
-        [ ] Remove contact company info (VAT etc)
+    [x] Questions for Kim
+        [x] Remove contact company info (VAT etc)
 
     [ ] Snagging
         [ ] Update copy
