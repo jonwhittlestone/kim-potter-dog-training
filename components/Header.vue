@@ -35,8 +35,8 @@
                         id="nav-content">
                     <ul class="list-reset md:flex md:justify-center 
                             flex-1 items-center">
-                        <li class="active lg:mr-3">
-                            <nuxt-link to="/" class="inline-block py-2 px-4 no-underline">Home</nuxt-link>
+                        <li class=" lg:mr-3">
+                            <nuxt-link to="/" exact class="inline-block py-2 px-4 no-underline ">Home</nuxt-link>
                         </li>
                         <li class="lg:mr-3">
                             <nuxt-link to="/About-Me" class="inline-block py-2 px-4 no-underline">About Me</nuxt-link>
@@ -95,34 +95,34 @@ nav {
     @apply hidden
 }
 
-#nav-content li.active a {
-    @apply text-blue-200
+#nav-content li a:hover {@apply text-black bg-white}
+#nav-content li a.active {
+    @apply text-blue-200 font-bold
 }
 
 .logo-container { @apply flex w-3/5 items-center flex-shrink-0 text-white }
 
 @screen md {
     nav {
-        /* background-image: url('~assets/pawbg.png'); */
-
         background-image: url('/img/nav_paws_bg_md.png');
-        /* background-color: rgba(0,126,205,1); */
         background-repeat: no-repeat;
         background-size:cover;
-
-        /* @apply bg-cover bg-no-repeat */
     }
     #logo {width:95% !important; height:95% !important}
     .left-of-logo { @apply block w-1/3 text-left font-bold }
     .right-of-logo { @apply block w-1/3 font-bold }
-    #nav-content li a { @apply text-white}
-    #nav-content li.active a { @apply text-black}
+    #nav-content li a  { @apply text-white my-4}
+    #nav-content li a.active   { @apply text-black bg-white}
 }
 
 @screen xl {
     #logo {width:80% !important; height:80% !important}
     #nav-content li { @apply text-lg p-2 }
 }
+
+/* @hover {
+    #nav-content li a {@apply bg-white text-black}
+} */
 
 .logo-container {
     @screen sm {}

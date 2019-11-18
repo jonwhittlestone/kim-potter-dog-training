@@ -6,6 +6,9 @@
 */
 module.exports = {
   important: true,
+  variants: {
+    underline: ['hover']
+  },
   theme: {
     colors: {
       transparent: 'transparent',

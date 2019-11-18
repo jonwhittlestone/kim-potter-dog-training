@@ -21,10 +21,10 @@ To carry on building on dev with nuxt
                 [x] Testimonials
                 [x] Contact
     [x] Link to other pages
-    [x] Scroll 'to top' icon
+    [x] Scrollhttps://www.google.com/search?client=ubuntu&channel=fs&q=kim%20potter%20dog%20training&ie=utf-8&oe=utf-8&hs=PIQ&sxsrf=ACYBGNTx0D7YuU4uHC5EvOZx0W_quXhTzQ:1574006734643&npsic=0&rflfq=1&rlha=0&rllag=51501049,-868826,986&tbm=lcl&rldimm=17468382948405453588&ved=2ahUKEwishauC0PHlAhU7URUIHSPABqIQvS4wAHoECAgQGA&rldoc=1&tbs=lrf:!1m4!1u2!2m2!2m1!1e1!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!2m1!1e2!2m1!1e16!3sIAE,lf:1,lf_ui:2&rlst=f#rlfi=hd:;si:17468382948405453588;mv:[[51.5072918,-0.8563972],[51.4948073,-0.8812567]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!2m1!1e2!2m1!1e16!3sIAE,lf:1,lf_ui:2 'to top' icon
     [x] Repeat mobile-first for Desktop
     [x] paw Backgrounds for Desktop
-    [ ] Nav active class on header and footer
+    [x] Nav active class on header and footer
     [ ] Close mobile menu when clicked
     [ ] Desktop addthis style sharer icons
     [ ] Official Docs/Tutorial showing Google Business Review Content - tinyurl.com/yxn6nvb7
@@ -41,7 +41,10 @@ To carry on building on dev with nuxt
     [ ] Add Call to Action for 'View GMB Reviews' on footer (GMB sign in to get short url)
     [x] BUG [CSS] banner images backgrounds are bg-scroll when should be fixed
     [ ] Questions for Kim
-        [ ] Do you want your VAT and Company Reg number on Contact page?
+        [ ] Remove contact company info (VAT etc)
+
+    [ ] Snagging
+        [ ] Update copy
 ```
 ## Before and After
 

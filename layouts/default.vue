@@ -78,12 +78,24 @@
       <div id="footers__sitemap" class="text-center">
         <nav>
           <ul>
-            <li class="active"><a href="">Home</a></li>
-            <li><a href="">About Me</a></li>
-            <li><a href="">Dog Training</a></li>
-            <li><a href="">Lovable Rogues Gallery</a></li>
-            <li><a href="">Testimonials</a></li>
-            <li><a href="">Contact</a></li>
+            <li>
+              <nuxt-link to="/" exact class="inline-block">Home</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/About-Me" class="inline-block">About Me</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/dog-training" class="inline-block">Dog Training</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/gallery" class="inline-block">Gallery</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/testimonials" class="inline-block">Testimonials</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/contact" class="inline-block">Contact</nuxt-link>
+            </li>
           </ul>
         </nav>
       </div>
@@ -273,8 +285,8 @@ button.primary:hover, button.secondary {
   @apply text-sm text-white
 }
 
-#footers nav li.active a {
-  @apply text-blue-100
+#footers nav a.active {
+  @apply text-blue-100 font-bold underline
 }
 
 div.service-features .hen-banner .cover {

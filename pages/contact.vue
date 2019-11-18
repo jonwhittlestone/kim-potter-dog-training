@@ -49,7 +49,7 @@ p {
 }
 
 @screen md {
-    .reasons-banner {@apply mt-10}
+    .reasons-banner {@apply mt-20}
 }
 
 @screen lg {
