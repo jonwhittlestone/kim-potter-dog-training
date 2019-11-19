@@ -28,8 +28,9 @@ To carry on building on dev with nuxt
     [x] Social sharing icons - styling/linking through
     [ ] Official Docs/Tutorial showing Google Business Review Content - tinyurl.com/yxn6nvb7
     [ ] SEO markup
-        [ ] Titles and Meta 
+        [x] Titles and Meta 
         [ ] Favicon
+        [ ] Canonical links with i18nSeo ?
         [ ] Sitemap with `exclude[]`
         [ ] Alt tags
 
