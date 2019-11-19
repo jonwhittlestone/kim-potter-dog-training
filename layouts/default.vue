@@ -60,7 +60,7 @@
 
         <h2 class="my-3 italic">Dedicated to dogs ...</h2>
 
-        <button class="primary w-full border border-white p-0 m-0 p-3 text-center">Share</button> 
+        <SocialSharing />
       </div>
 
       <div id="footers__contact-methods" class="flex text-white text-sm p-6">
@@ -121,10 +121,11 @@
 <script>
 import TheHeader from '~/components/TheHeader.vue'
 import KeywordBanner from '~/components/KeywordBanner.vue'
+import SocialSharing from '~/components/SocialSharing.vue'
 
 export default {
   components: {
-   TheHeader, KeywordBanner
+   TheHeader, KeywordBanner, SocialSharing
   },
   methods:{
     isPage(name) {
@@ -140,9 +141,7 @@ export default {
   data() {
     return {}
   },
-  mounted() {
-      console.log('hi');
-  }
+  mounted() {}
 }
 </script>
 

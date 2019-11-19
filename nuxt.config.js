@@ -12,7 +12,8 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' }
     ]
   },
   /*
@@ -28,7 +29,10 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [{src:'~/plugins/vue-image-lightbox', mode:'client'}],
+  plugins: [
+    {src:'~/plugins/vue-image-lightbox', mode:'client'},
+    {src:'~/plugins/vue-social-sharing', mode:'client'}
+  ],
   /*
   ** Nuxt.js dev-modules
   */

@@ -7,7 +7,6 @@ To carry on building on dev with nuxt
     npm run dev
 
 ## Next Steps
-
 ```
     [ ] Nuxt static site build - mirror from yell.com
         [x] Mobile homepage - Mobile-first markup / styles / behaviour / separate header components
@@ -26,7 +25,7 @@ To carry on building on dev with nuxt
     [x] paw Backgrounds for Desktop
     [x] Nav active class on header and footer
     [x] Close mobile menu when clicked
-    [ ] Desktop addthis style sharer icons
+    [x] Social sharing icons - styling/linking through
     [ ] Official Docs/Tutorial showing Google Business Review Content - tinyurl.com/yxn6nvb7
     [ ] SEO markup
         [ ] Titles and Meta 
@@ -34,15 +33,16 @@ To carry on building on dev with nuxt
         [ ] Sitemap with `exclude[]`
         [ ] Alt tags
 
-    [ ] Deploy staging to netlify
+    [ ] Deploy staging to kpdt-staging.howapped.com with nginx password
     [ ] Contact form on Netlify with Thank-you msg
     [ ] GDPR cookie accept
     [ ] Privacy Policy and Copyright on footer
     [ ] Add Call to Action for 'View GMB Reviews' on footer (GMB sign in to get short url)
     [x] BUG [CSS] banner images backgrounds are bg-scroll when should be fixed
+    [ ] BUG [CSS] sm/mobile view > contact page > form > margin-top is too big
     [x] Questions for Kim
         [x] Remove contact company info (VAT etc)
-
+    [ ] Deploy to Netlify
     [ ] Snagging
         [ ] Update copy
 ```

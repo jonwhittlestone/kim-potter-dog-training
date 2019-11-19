@@ -17,9 +17,7 @@
                         </div>
                         <div class="md:w-1/3">
                             <div class="md:w-4/5 md:mx-auto">
-                                <a class="text-black no-underline hover:text-white hover:no-underline" href="#">
-                                    <nuxt-link to="/"><img src='~/assets/logo.png' class='mx-auto md:w-full md:h-full md:object-cover' id='logo'></nuxt-link>
-                                </a>
+                                <nuxt-link to="/" class="text-black no-underline hover:text-white hover:no-underline"><img src='~/assets/logo.png' class='mx-auto md:w-full md:h-full md:object-cover' id='logo'></nuxt-link>
                             </div>
                         </div>
                         <div class="right-of-logo">
