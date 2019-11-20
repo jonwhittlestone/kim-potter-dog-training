@@ -1,5 +1,15 @@
 
+const baseUrl = process.env.BASE_URL || 'https://www.kimpotterdogtraining.com'
+
 export default {
+
+  /*
+   * Environment
+   */
+  env: {
+    baseUrl
+  },
+
   mode: 'universal',
   /*
   ** Headers of the page

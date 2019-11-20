@@ -127,6 +127,18 @@ export default {
   components: {
    TheHeader, KeywordBanner, SocialSharing
   },
+
+  head () {
+    const baseUrl = process.env.baseUrl
+    const { path } = this.$route
+    const pathWithSlash = path.endsWith('/') ? path : `${path}/`
+
+    return {
+      link: [
+        {rel: 'canonical', href: `${baseUrl}${pathWithSlash}`}
+      ]
+    }
+  },
   methods:{
     isPage(name) {
       if (this.$route.name == name) {
@@ -141,7 +153,7 @@ export default {
   data() {
     return {}
   },
-  mounted() {}
+  mounted() {},
 }
 </script>
 

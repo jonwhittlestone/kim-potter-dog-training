@@ -31,7 +31,7 @@ To carry on building on dev with nuxt
         [x] Titles and Meta 
         [x] Favicon
             * Generated at https://realfavicongenerator.net
-        [ ] Canonical links with i18nSeo ?
+        [x] Canonical links with i18nSeo ?
         [ ] Sitemap with `exclude[]`
         [ ] Alt tags
 
