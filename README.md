@@ -29,13 +29,15 @@ To carry on building on dev with nuxt
     [ ] Official Docs/Tutorial showing Google Business Review Content - tinyurl.com/yxn6nvb7
     [ ] SEO markup
         [x] Titles and Meta 
-        [ ] Favicon
+        [x] Favicon
+            * Generated at https://realfavicongenerator.net
         [ ] Canonical links with i18nSeo ?
         [ ] Sitemap with `exclude[]`
         [ ] Alt tags
 
     [ ] Deploy staging to kpdt-staging.howapped.com with nginx password
-    [ ] Contact form on Netlify with Thank-you msg
+    [ ] Contact form with Netlify serverless function with Thank-you msg
+        * https://dev.to/jennapederson/sending-email-with-netlify-functions-2e3h
     [ ] GDPR cookie accept
     [ ] Privacy Policy and Copyright on footer
     [ ] Add Call to Action for 'View GMB Reviews' on footer (GMB sign in to get short url)
