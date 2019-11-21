@@ -35,10 +35,11 @@ To carry on building on dev with nuxt
         [ ] Sitemap with `exclude[]`
         [ ] Alt tags
 
-    [ ] Deploy staging to kpdt-staging.howapped.com with nginx password
+    [ ] Deploy staging to kpdt-staging.howapped.com with nginx password. (or nuxt auth module with local auth)
     [ ] Contact form with Netlify serverless function with Thank-you msg
         * https://dev.to/jennapederson/sending-email-with-netlify-functions-2e3h
     [ ] GDPR cookie accept
+    [ ] GA nuxt module: `@nuxtjs/google-analytics`
     [ ] Privacy Policy and Copyright on footer
     [ ] Add Call to Action for 'View GMB Reviews' on footer (GMB sign in to get short url)
     [x] BUG [CSS] banner images backgrounds are bg-scroll when should be fixed
