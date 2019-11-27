@@ -108,7 +108,9 @@
           <nav class="relative overflow-hidden">
 
             <ul class="flex justify-center flex-row wrap">
-              <li class="active"><a href="">Privacy and Cookie Policy</a></li>
+              <li>
+                <nuxt-link to="privacy">Privacy and Cookie Policy</nuxt-link>
+               </li>
               <li>Software Development by <a href="https://howapped.com">HowApped</a></li>
             </ul>
           </nav>
