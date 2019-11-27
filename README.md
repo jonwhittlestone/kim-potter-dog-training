@@ -36,7 +36,7 @@ To carry on building on dev with nuxt
         [ ] Alt tags
 
     [x]  Deploy staging to kpdt-staging.howapped.com with nginx password. (or nuxt auth module with local auth)
-    [ ] Holding page with contact details and image
+    [x] Holding page with contact details and image: kpdt.howapped.com
     for a week after Kim disengages with Yell
     [x] Contact form with Netlify serverless function with Thank-you msg
         * https://dev.to/jennapederson/sending-email-with-netlify-functions-2e3h
