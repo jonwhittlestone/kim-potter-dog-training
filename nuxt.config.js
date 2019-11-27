@@ -61,8 +61,6 @@ export default {
   */
   modules: [
     [
-
-      'nuxt-basic-auth-module',
       'nuxt-fontawesome', {
             imports: [
             {
@@ -79,15 +77,12 @@ export default {
     ]
   ],
 
-  basic: {
-      name: 'kpdt',
-      pass: 'Smelblington3',
-      enabled:'true' // require boolean value(nullable)
-    },
   /*
   ** Build configuration
   */
   build: {
+
+    transpile: [/vue-if-bot/, /^vue-cookieconsent-component(.*)?$/],
     /*
     ** You can extend webpack config here
     */

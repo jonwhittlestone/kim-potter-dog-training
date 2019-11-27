@@ -1,5 +1,8 @@
 <template>
     <div>
+        <div class="fixed z-50 w-full bottom-0">
+            <Consent />
+        </div>
         <section>
             <header>
                 <nav>
@@ -74,7 +77,9 @@
 </template>
 
 <script>
+import Consent from '~/components/Consent'
 export default {
+    components: { Consent },
     data() {
         return {
             isUncollapsed: this.isUncollapsed
