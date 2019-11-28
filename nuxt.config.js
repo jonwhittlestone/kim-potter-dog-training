@@ -61,6 +61,7 @@ export default {
   */
   modules: [
     [
+      '@nuxtjs/axios',
       'nuxt-fontawesome', {
             imports: [
             {
@@ -76,6 +77,13 @@ export default {
         }
     ]
   ],
+
+  /*
+   ** Axios config
+   */
+  axios: {
+    baseURL: '/'
+  },
 
   /*
   ** Build configuration
