@@ -12,41 +12,7 @@
 
     <!-- section.footers - separate this to component -->
     <section id="footers" class="bg-black text-white">
-      <div id='contact-form'>
-        <form>
-          <div class='grouped-contact-details'>
-            <div class="row">
-              <label for="input-name">Name</label>
-              <input type="text" name="input-name" id="input-name">
-            </div> 
-            <div class="row">
-              <label for="input-email">Email</label>
-              <input type="text" name="input-email" id="input-email">
-            </div>
-            <div class="row">
-              <label for="input-phone">Phone</label>
-              <input type="text" name="input-phone" id="input-phone">
-            </div>
-          </div>
-          <div class="row">
-            <label for="input-message">Message</label>
-            <textarea id='input-message'></textarea>
-          </div>
-          <div class="row text-center">
-            <button class="primary w-3/4">Send</button>
-          </div>
-        </form>
-        <div id="contact-review-box" class="">
-          <dl class="list text-xs p-6">
-            <dt class="inline">Average Rating:</dt>
-            <dd class="inline mr-4 font-bold">N/A</dd>
-
-            <dt class="inline">Total Number of Reviews:</dt>
-            <dd class="inline font-bold">0</dd>
-          </dl>
-        </div>
-      </div>
-
+      <ContactForm />
       <div id="footers__call-to-action" class="p-6">
         <button class="btn-email-us primary ">
           <div class="w-1/5 text-left text-xl">
@@ -123,11 +89,12 @@
 <script>
 import TheHeader from '~/components/TheHeader.vue'
 import KeywordBanner from '~/components/KeywordBanner.vue'
+import ContactForm from '~/components/ContactForm.vue'
 import SocialSharing from '~/components/SocialSharing.vue'
 
 export default {
   components: {
-   TheHeader, KeywordBanner, SocialSharing
+   TheHeader, KeywordBanner, ContactForm, SocialSharing
   },
 
   head () {
@@ -253,28 +220,11 @@ button.primary:hover, button.secondary {
   @apply w-full
 }
 
-#contact-form {
-  @apply p-6 bg-grey-200 text-black
-}
-#contact-form .row {
-  @apply mb-4 block text-black
-}
-
-#contact-form .row label {
-  @apply mb-3 text-xs
-}
 
 #footers {
   @apply text-black
 }
 
-#contact-form .row input[type=text], #contact-form textarea {
-  @apply w-full border-blue-200 border p-1 block
-}
-
-#contact-form textarea {
-  @apply h-48
-}
 
 #footers__legal nav {
   @apply p-2
@@ -308,10 +258,6 @@ button.primary:hover, button.secondary {
 div.service-features .hen-banner .cover {
   background-image: url('~assets/hen.png');
   @apply bg-scroll bg-no-repeat bg-cover bg-center border-none
-}
-
-section.contact-form div {
-  @apply bg-grey-100
 }
 
 div.service-features .service-feature {

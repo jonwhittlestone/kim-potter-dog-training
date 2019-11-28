@@ -51,6 +51,9 @@ To carry on building on dev with nuxt
     [ ] BUG [CSS] sm/mobile view > contact page > form > margin-top is too big
     [x] Questions for Kim
         [x] Remove contact company info (VAT etc)
+        [ ] Get kp mailgun creds
+        [ ] Get URL to leave review GMB
+    [ ] Compare lighthouse audit before and after and improve if needed
     [ ] Deploy to Netlify
     [ ] Snagging
         [ ] Update copy
