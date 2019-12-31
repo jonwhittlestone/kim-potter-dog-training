@@ -32,7 +32,7 @@
           <div class="col video">
             <h2 class="mb-4">Think like a dog</h2>
             <iframe id="home-youtube-embed" 
-                  src="https://www.youtube.com/embed/3dILNZbqhp4" 
+                  src="https://www.youtube.com/embed/aLKOu-kQLto" 
                   frameborder="0" 
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                   allowfullscreen></iframe>

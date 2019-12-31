@@ -45,7 +45,7 @@ To carry on building on dev with nuxt
         - Full developmint GDPR commit - ac74b0537447bc35f4c4a0ffaa7c862a067fbc62
     [-] GA nuxt module: `@nuxtjs/google-analytics`
     [x] Privacy Policy
-    [ ] Remove final contact details frame of video
+    [x] Remove final contact details frame of video
     [ ] Add Call to Action for 'View GMB Reviews' on footer (GMB sign in to get short url)
     [x] BUG [CSS] banner images backgrounds are bg-scroll when should be fixed
     [ ] BUG [CSS] sm/mobile view > contact page > form > margin-top is too big
