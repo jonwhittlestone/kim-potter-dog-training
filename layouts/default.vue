@@ -235,7 +235,7 @@ button.primary:hover, button.secondary {
 }
 
 @screen xl {
-  section.hero .main-content {@apply mt-64 px-32}
+  section.hero .main-content {@apply mt-64 pt-16 px-32}
 }
 
 .scroll-icon-container {top:85%}

@@ -6,7 +6,7 @@
                 <div class="cover"><span>&nbsp;</span></div>
             </div>
 
-            <div class="main-content p-6 mt-4">
+            <div class="mt-4 pt-6 pb-0 main-content">
                 <h1 class="text-2xl pt-0 p-8 font-extrabold leading-normal">
 professional dog obedience training
                 </h1>
@@ -22,9 +22,9 @@ professional dog obedience training
                     Postcode: RG10 8HL
                 </p>
 
-                <h2 class="text-left">Business Hours</h2>
+                <h2 class="text-left pb-0">Business Hours</h2>
 
-                <p class="text-left">Mon - Sun<br>Open 24 Hours</p>
+                <p class="text-left pb-0 mb-0">Mon - Sun<br>Open 24 Hours</p>
             </div>
         </section>
     </div>

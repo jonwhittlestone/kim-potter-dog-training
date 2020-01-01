@@ -38,7 +38,8 @@ To carry on building on dev with nuxt
     [x]  Deploy staging to kpdt-staging.howapped.com with nginx password. (or nuxt auth module with local auth)
     [x] Holding page with contact details and image: kpdt.howapped.com
     for a week after Kim disengages with Yell
-    [x] Contact form with Netlify serverless function with Thank-you msg
+    [x] Serverless contact form on holding page
+    [ ] Contact form with Netlify serverless function with Thank-you msg
         * https://dev.to/jennapederson/sending-email-with-netlify-functions-2e3h
     [x] GDPR cookie accept
         - https://evodiaaut.github.io/vue-cookieconsent-component/
@@ -48,7 +49,7 @@ To carry on building on dev with nuxt
     [x] Remove final contact details frame of video
     [ ] Add Call to Action for 'View GMB Reviews' on footer (GMB sign in to get short url)
     [x] BUG [CSS] banner images backgrounds are bg-scroll when should be fixed
-    [ ] BUG [CSS] sm/mobile view > contact page > form > margin-top is too big
+    [x] BUG [CSS] sm/mobile view > contact page > form > margin-top is too big
     [x] Questions for Kim
         [x] Remove contact company info (VAT etc)
     [ ] Deploy to Netlify

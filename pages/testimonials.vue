@@ -1,7 +1,7 @@
 <template>
       <div>
         <section class='hero text-center'>
-            <div class="main-content p-6">
+            <div class="main-content">
                 <h1 class="text-2xl pt-0 p-8 font-extrabold leading-normal">
                     Helping with dog training, recall, behaviour indoors and outside, dog aggression, anxiety, introducing a new dog to existing family and pets, and much more
                 </h1>

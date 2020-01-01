@@ -1,7 +1,7 @@
 <template>
   <div>
         <section class='hero text-center'>
-            <div class="main-content p-6">
+            <div class="main-content">
                 <h1 class="text-2xl pt-0 p-8 font-extrabold leading-normal">Assisting with your dog behavioural and training issues</h1>
                 <p>
                     Contact Kim Potter (Dedicated to Dogs) for more details about my services. I work with clients across  Berkshire, Thames Valley, Oxford and London. Please see through the gallery below.

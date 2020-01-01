@@ -157,5 +157,17 @@ section.contact-form div { @apply bg-grey-100 }
   .hen-banner .service-outline { @apply text-left py-8 }
 }
 
+@screen lg {
+  section.hero, section.marketing-summary {
+    @apply pt-4 px-8
+  }
+}
+
+@screen xl {
+  section.hero, section.marketing-summary {
+    @apply pt-8 px-32
+  }
+}
+
 
 </style>
