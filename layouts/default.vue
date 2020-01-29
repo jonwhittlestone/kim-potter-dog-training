@@ -101,7 +101,8 @@
       </div>
 
       <div id="footers__review" class="text-center m-6">
-        <img src='~/assets/google-reviews-300x126.png' class='mx-auto w-40'>
+        <a href="https://g.page/kim-potter-dog-training/review?gm"><img src='~/assets/google-reviews-300x126.png' class='mx-auto w-40'></a>
+
       </div>
 
       <div id="footers__legal" class="text-center bg-grey-300">

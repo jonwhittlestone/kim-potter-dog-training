@@ -52,7 +52,7 @@
                     <div class="col copy">
                         <h2 class="secondary pb-4">What results can you expect?</h2>
                         <ul class="list-disc pb-4 px-6">
-                            <li>Introducing your new pet to children/pets</li>
+                            <li>Introducing your new pet to children / pets</li>
                             <li>Puppy house trained</li>
                             <li>Puppy toilet trained</li>
                             <li>No pulling on lead</li>

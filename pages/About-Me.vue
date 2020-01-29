@@ -7,7 +7,7 @@
                     <div class="col about copy">
                         <h2 class='secondary'>About Kim Potter</h2>
                         <p class="mb-4">
-                            As a professional dog trainer and behaviourist, with over 20 years' experience, I am truly dedicated to dogs.
+                            As a full-time professional dog trainer and behaviourist, with over 25 years' experience, I am truly dedicated to dogs.
                         </p>
                         <p>
                             We need to know how to communicate our wishes to them and how to change their behaviours which get them into trouble. With this in mind, I provide home visits specialising in one-to-one personalised dog training sessions at your home and walking areas, to suit your specific needs. 
@@ -32,7 +32,7 @@
                     <div class="col copy">
                         <h2 class="secondary pb-4">Why rely on me as your dog trainer?</h2>
                         <ul class="list-disc pb-4 px-6">
-                            <li>Over 20 years' experience</li>
+                            <li>Over 25 years' experience</li>
                             <li>Truly dedicated to dogs</li>
                             <li>Free telephone advice</li>
                             <li>One-to-one home visits</li>

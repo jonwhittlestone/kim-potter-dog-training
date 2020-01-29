@@ -31,7 +31,7 @@
             <div class="mt-0 main-content p-6 pt-0">
                 <h2>Dog behaviourist</h2>
                 <p> 
-                    Kim Potter (Dedicated to Dogs) has over 20 years of experience. I offer dog training at reasonable prices. Contact me today.
+                    Kim Potter (Dedicated to Dogs) has over 25 years of experience. I offer dog training at reasonable prices. Contact me today.
                 </p>
             </div>
         </section>

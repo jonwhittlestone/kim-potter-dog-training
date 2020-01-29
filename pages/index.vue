@@ -5,7 +5,7 @@
       <div class='main-content text-center'>
         <div class="row">
           <div class="col">
-            <h1>Professional Dog Behaviourist offering home visits in Reading, Berkshire, Thames Valley, Oxford &amp; London</h1>
+            <h1>Full-Time Professional Dog Behaviourist offering home visits in Reading, Berkshire, Thames Valley, Oxford &amp; London</h1>
             <button class='primary'><nuxt-link to="/About-Me">About Me</nuxt-link></button>
           </div>
           <div class="col">
@@ -48,19 +48,19 @@
             <!-- single service-feature -->
             <div class='service-feature'>
               <img src='~/assets/icon-dog.png' class='w-24 mx-auto'>
-              <h3 class='text-blue-200 font-bold'>I have over 20 years of experience as a professional trainer</h3>
+              <h3 class='text-blue-200 font-bold'>I have over 25 years of experience as a professional trainer</h3>
             </div>
 
             <!-- single service-feature -->
             <div class='service-feature'>
               <img src='~/assets/icon-walkies.png' class='w-24 mx-auto'>
-              <h3 class='text-black font-bold'>I can help customers with difficult dogs that might be rehomed or put down</h3>
+              <h3 class='text-black font-bold'>I can help clients with difficult dogs that might be rehomed or put down</h3>
             </div>
 
             <!-- single service-feature -->
             <div class='service-feature'>
               <img src='~/assets/icon-pawprint.png' class='w-24 mx-auto'>
-              <h3 class='text-blue-200 font-bold'>I have worked throughout the UK and Europe</h3>
+              <h3 class='text-blue-200 font-bold'>I have worked throughout the UK and Europe and work closely with vets</h3>
             </div>
 
             <!-- single service-feature -->
