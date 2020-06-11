@@ -6,8 +6,8 @@ const {
   SEND_EMAIL
 } = process.env;
 
-const FROM_EMAIL_ADDRESS = "dev@howapped.com"
-const CONTACT_TO_EMAIL_ADDRESS = "dev@howapped.com"
+const FROM_EMAIL_ADDRESS = "caninetrainerkp@gmail.com"
+const CONTACT_TO_EMAIL_ADDRESS = "caninetrainerkp@gmail.com"
 
 const mailgun = require("mailgun-js")({
   apiKey: MAILGUN_API_KEY,
