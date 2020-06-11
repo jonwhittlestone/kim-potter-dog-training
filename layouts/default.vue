@@ -17,7 +17,7 @@
           <div class='grouped-contact-details'>
             <div class="row">
               <label for="input-name">Name</label>
-              <input type="text" name="input-name" id="input-name" 
+              <input type="text" required name="input-name" id="input-name" 
                       v-model="contactName">
             </div> 
             <div class="row">
@@ -27,7 +27,8 @@
             </div>
             <div class="row">
               <label for="input-phone">Phone</label>
-              <input type="text" name="input-phone" id="input-phone">
+              <input type="text" required name="input-phone" id="input-phone" 
+                      v-model="contactPhone">
             </div>
           </div>
           <div class="row">
@@ -185,6 +186,7 @@ export default {
       this.messages = []
       this.contactName = ''
       this.contactEmail = ''
+      this.contactPhone = ''
       this.contactMessage = ''
     }
   },
@@ -194,6 +196,7 @@ export default {
       messages: [],
       contactName: '',
       contactEmail: '',
+      contactPhone: '',
       contactMessage: ''
     }
   },
