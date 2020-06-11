@@ -11,6 +11,15 @@
     <KeywordBanner />
 
     <!-- section.footers - separate this to component -->
+      <article v-for="msg in messages"
+        :key="msg.text"
+        class="message"
+        :class="msg.type === 'success' ? 'is-success' : 'is-danger'">
+        <div class="message-body">
+          {{msg.text}}
+        </div>
+      </article>
+
     <section id="footers" class="bg-black text-white">
       <div id='contact-form'>
         <form>
@@ -40,14 +49,6 @@
           </div>
         </form>
 
-        <article v-for="msg in messages"
-          :key="msg.text"
-          class="message"
-          :class="msg.type === 'success' ? 'is-success' : 'is-danger'">
-          <div class="message-body">
-            {{msg.text}}
-          </div>
-        </article>
 
         <div id="contact-review-box" class="">
           <dl class="list text-xs p-6">
@@ -361,6 +362,14 @@ section.contact-form div {
 
 div.service-features .service-feature {
   @apply border-blue-200 bg-white
+}
+
+.message .is-success {
+  margin:2rem;
+  color: darkgreen;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
 }
 
 
