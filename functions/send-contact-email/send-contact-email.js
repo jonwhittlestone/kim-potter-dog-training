@@ -32,7 +32,7 @@ exports.handler = async (event) => {
 
   const data = JSON.parse(event.body)
   if (!data.message || !data.contactName || !data.contactEmail || !data.contactPhone) {
-    return { statusCode: 422, body: 'Name, email, and message are required.' }
+    return { statusCode: 422, body: 'Name, email, phone and message are required.' }
   }
 
   const mailgunData = {
