@@ -3,8 +3,8 @@ const {
   MAILGUN_API_KEY,
   MAILGUN_DOMAIN,
   MAILGUN_URL,
-  FROM_EMAIL_ADDRESS,
-  CONTACT_TO_EMAIL_ADDRESS,
+  "dev@howapped.com",   // From: email address
+  "dev@howapped.com",   // To: email address
   SEND_EMAIL
 } = process.env;
 
