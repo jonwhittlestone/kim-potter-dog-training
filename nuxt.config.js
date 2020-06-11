@@ -78,6 +78,14 @@ export default {
     ]
   ],
 
+
+  /*
+   ** Axios config
+   */
+  axios: {
+    baseURL: '/'
+  },
+
   /*
   ** Build configuration
   */

@@ -9,7 +9,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "jest"
+    "test": "jest",
+    "lambda-build": "netlify-lambda build ./functions",
+    "lambda-serve": "netlify-lambda serve ./functions"
   },
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^5.11.2",
