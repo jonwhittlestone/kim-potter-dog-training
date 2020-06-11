@@ -17,11 +17,13 @@
           <div class='grouped-contact-details'>
             <div class="row">
               <label for="input-name">Name</label>
-              <input type="text" name="input-name" id="input-name">
+              <input type="text" name="input-name" id="input-name" 
+                      v-model="contactName">
             </div> 
             <div class="row">
               <label for="input-email">Email</label>
-              <input type="text" name="input-email" id="input-email">
+              <input type="text" name="input-email" id="input-email" 
+                      v-model="contactEmail">
             </div>
             <div class="row">
               <label for="input-phone">Phone</label>
@@ -30,12 +32,22 @@
           </div>
           <div class="row">
             <label for="input-message">Message</label>
-            <textarea id='input-message'></textarea>
+            <textarea id='input-message'  v-model="contactMessage"></textarea>
           </div>
           <div class="row text-center">
-            <button class="primary w-3/4">Send</button>
+            <button class="primary w-3/4" @click="sendMessage">Send</button>
           </div>
         </form>
+
+        <article v-for="msg in messages"
+          :key="msg.text"
+          class="message"
+          :class="msg.type === 'success' ? 'is-success' : 'is-danger'">
+          <div class="message-body">
+            {{msg.text}}
+          </div>
+        </article>
+
         <div id="contact-review-box" class="">
           <dl class="list text-xs p-6">
             <dt class="inline">Average Rating:</dt>
@@ -150,11 +162,39 @@ export default {
     },
     scrollToTop() {
       window.scrollTo({ top:0, behavior: 'smooth' })
+    },
+    sendMessage(e) {
+      e.preventDefault();
+      this.triggerSendMessageFunction();
+    },
+    async triggerSendMessageFunction () {
+      try {
+        const response = await this.$axios.$post('/.netlify/functions/send-contact-email', {
+          contactName: this.contactName,
+          contactEmail: this.contactEmail,
+          message: this.contactMessage
+        })
+        this.resetForm()
+        this.messages.push({ type: 'success', text: response })
+      } catch (error) {
+        this.messages.push({ type: 'error', text: error.response.data })
+      }
+    },
+    resetForm() {
+      this.messages = []
+      this.contactName = ''
+      this.contactEmail = ''
+      this.contactMessage = ''
     }
   },
   asyncData() {},
   data() {
-    return {}
+    return {
+      messages: [],
+      contactName: '',
+      contactEmail: '',
+      contactMessage: ''
+    }
   },
   mounted() {},
 }
