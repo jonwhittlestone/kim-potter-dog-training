@@ -61,6 +61,7 @@ export default {
   */
   modules: [
     [
+      '@nuxtjs/axios',
       'nuxt-fontawesome', {
             imports: [
             {
