@@ -8,17 +8,10 @@ To carry on building on dev with nuxt
 
 ## Next Steps
 ```
-    [ ] Nuxt static site build - mirror from yell.com
+    [x] Nuxt static site build - mirror from yell.com
         [x] Mobile homepage - Mobile-first markup / styles / behaviour / separate header components
-        [ ] Form, footer components
-        [ ] Mobile content page - markup / styles / behaviour
-            [ ] Nuxt-ify content pages
-                [x] About Me
-                [x] Dog Training
-                [x] Loveable Rogues Gallery
-                    [x]  Lightbox Component
-                [x] Testimonials
-                [x] Contact
+        [x] Form, footer components
+        [x] Mobile content page - markup / styles / behaviour
     [x] Link to other pages
     [x] Scroll 'to top' icon
     [x] Repeat mobile-first for Desktop
@@ -53,13 +46,11 @@ To carry on building on dev with nuxt
     [x] BUG 'popupWindow is null' when revisiting site after the social share popup thingy - this was bc I tried it on local
     [x] Questions for Kim
         [x] Remove contact company info (VAT etc)
-        [ ] 2 GMB listings - how to claim the one with Jordan's review as our own!
-            - https://www.google.com/search?q=dog%20trainers%20reading&sxsrf=ACYBGNTPX1ovT0fYdx-QBHxyFvSFm50tgQ:1578839458957&npsic=0&rflfq=1&rlha=0&rllag=51451081,-920857,5347&tbm=lcl&rldimm=17468382948405453588&ved=2ahUKEwjp7O6oo_7mAhWJi1wKHYGECMsQvS4wAnoECAsQOg&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!2m1!1e2!2m1!1e16!2m1!1e3!3sIAE,lf:1,lf_ui:14&rlst=f#rlfi=hd:;si:17468382948405453588;mv:[[51.498229699999996,-0.871199],[51.391396799999995,-1.0647847]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!2m1!1e2!2m1!1e16!2m1!1e3!3sIAE,lf:1,lf_ui:14
-            - https://www.google.co.uk/maps/place/Kim+Potter+Dog+Training/@51.4922039,-0.88224,17z/data=!3m1!4b1!4m5!3m4!1s0x487685940d015beb:0x5a07d81b1df6db19!8m2!3d51.4922039!4d-0.880046
     [ ] Deploy to Netlify
     [x] Google My Business pic
     [ ] Snagging
-        [ ] Update copy
+        [x] Update copy
+        [x] List of areas on homepage
 ```
 ## Before and After
 

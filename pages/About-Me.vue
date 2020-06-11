@@ -41,7 +41,7 @@
                             <li>All aspects of dog training covered</li>
                             <li>Introduction of your new pet to family/pets</li>
                             <li>Personalised dog training classes/sessions to suit you &amp; your dog</li>
-                            <li>I often work with Binfield Dog Rescue</li>
+                            <li>'I work with local rescues and breed specific rescues, e.g. GSD, Dobermann and Dachshund rescues</li>
                         </ul>
                         <p>
                             I am experienced in dealing with all breeds including Staffy Crosses and Bull Breeds and I'm often used to correct the trickier behavioural problems. 

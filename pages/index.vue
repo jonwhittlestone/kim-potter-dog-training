@@ -5,7 +5,7 @@
       <div class='main-content text-center'>
         <div class="row">
           <div class="col">
-            <h1>Full-Time Professional Dog Behaviourist offering home visits in Reading, Berkshire, Thames Valley, Oxford &amp; London</h1>
+            <h1>Full-Time Professional Dog Behaviourist offering home visits in Reading, Thames Valley, Berkshire, Marlow, Aylesbury, Oxford &amp; Basingstoke.</h1>
             <button class='primary'><nuxt-link to="/About-Me">About Me</nuxt-link></button>
           </div>
           <div class="col">
