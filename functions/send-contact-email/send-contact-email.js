@@ -38,10 +38,9 @@ exports.handler = async (event) => {
   const mailgunData = {
     from: FROM_EMAIL_ADDRESS,
     to: CONTACT_TO_EMAIL_ADDRESS,
-    cc: data.contactEmail,
     'h:Reply-To': data.contactEmail,
-    subject: `New contact from ${data.contactName}`,
-    text: `Name: ${data.contactName}\nEmail: ${data.contactEmail}\nMessage: ${data.message}`
+    subject: `New website contact from ${data.contactName}`,
+    text: `Name: ${data.contactName}\nEmail: ${data.contactEmail}\nPhone: ${data.contactPhone}\nMessage: ${data.message}`
   }
 
   return sendEmail(mailgunData).then(() => ({

@@ -172,6 +172,7 @@ export default {
         const response = await this.$axios.$post('/.netlify/functions/send-contact-email', {
           contactName: this.contactName,
           contactEmail: this.contactEmail,
+          contactPhone: this.contactPhone,
           message: this.contactMessage
         })
         this.resetForm()
