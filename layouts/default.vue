@@ -369,21 +369,19 @@ div.service-features .service-feature {
   text-align:center;
 }
 
-.message .is-success {
+.message.is-success {
   margin:2rem;
   color: darkgreen;
   font-weight: bold;
   text-decoration: underline;
   text-align: center;
 }
-.message .is-danger {
-
+.message.is-danger {
   margin:2rem;
   color: darkred;
   font-weight: bold;
   text-decoration: underline;
   text-align: center;
-
 }
 
 
