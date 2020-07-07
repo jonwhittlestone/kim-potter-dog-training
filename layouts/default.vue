@@ -383,7 +383,7 @@ div.service-features .service-feature {
   text-decoration: underline;
   text-align: center;
   /* animate-flicker */
-  animation: fadeIn 1s infinite alternate;
+  animation: fadeIn 1.5s infinite alternate;
 }
 
 @keyframes fadeIn { 
