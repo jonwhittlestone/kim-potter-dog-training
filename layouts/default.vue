@@ -382,6 +382,16 @@ div.service-features .service-feature {
   font-weight: bold;
   text-decoration: underline;
   text-align: center;
+  /* animate-flicker */
+  animation: fadeIn 1s infinite alternate;
+}
+
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+}
+
+.animate-flicker {
+
 }
 
 
