@@ -11,14 +11,6 @@
     <KeywordBanner />
 
     <!-- section.footers - separate this to component -->
-      <article v-for="msg in messages"
-        :key="msg.text"
-        class="message"
-        :class="msg.type === 'success' ? 'is-success' : 'is-danger'">
-        <div class="message-body">
-          {{msg.text}}
-        </div>
-      </article>
 
     <section id="footers" class="bg-black text-white">
       <div id='contact-form'>
@@ -48,6 +40,15 @@
             <button class="primary w-3/4" @click="sendMessage">Send</button>
           </div>
         </form>
+
+        <article v-for="msg in messages"
+          :key="msg.text"
+          class="message"
+          :class="msg.type === 'success' ? 'is-success' : 'is-danger'">
+          <div class="message-body">
+            {{msg.text}}
+          </div>
+        </article>
 
 
         <div id="contact-review-box" class="">
@@ -364,12 +365,25 @@ div.service-features .service-feature {
   @apply border-blue-200 bg-white
 }
 
+.message {
+  text-align:center;
+}
+
 .message .is-success {
   margin:2rem;
   color: darkgreen;
   font-weight: bold;
   text-decoration: underline;
   text-align: center;
+}
+.message .is-danger {
+
+  margin:2rem;
+  color: darkred;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+
 }
 
 

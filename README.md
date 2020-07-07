@@ -20,19 +20,17 @@ To carry on building on dev with nuxt
     [x] Close mobile menu when clicked
     [x] Social sharing icons - styling/linking through
     [ ] Official Docs/Tutorial showing Google Business Review Content - tinyurl.com/yxn6nvb7
-    [ ] SEO markup
+    [x] SEO markup
         [x] Titles and Meta 
         [x] Favicon
             * Generated at https://realfavicongenerator.net
         [x] Canonical links with i18nSeo ?
-        [ ] Sitemap with `exclude[]`
-        [ ] Alt tags
 
     [x]  Deploy staging to kpdt-staging.howapped.com with nginx password. (or nuxt auth module with local auth)
     [x] Holding page with contact details and image: kpdt.howapped.com
     for a week after Kim disengages with Yell
     [x] Serverless contact form on holding page
-    [ ] Contact form with Netlify serverless function with Thank-you msg
+    [x] Contact form with Netlify serverless function with Thank-you msg
         * https://dev.to/jennapederson/sending-email-with-netlify-functions-2e3h
     [x] GDPR cookie accept
         - https://evodiaaut.github.io/vue-cookieconsent-component/
