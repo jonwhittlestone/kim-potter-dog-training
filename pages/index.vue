@@ -27,7 +27,7 @@
             <p class="p-2">
               As dog owners, we love them to bits, but we don't always understand them: they are still hunting, scavenging, sexual, pack animals, with their associated needs which often differ from ours. Let me teach you how to 'think dog'.
             </p>
-            <button class="secondary">Testimonials</button>
+            <button class="secondary"><nuxt-link to="/testimonials">Testimonials</nuxt-link></button>
           </div>
           <div class="col video">
             <h2 class="mb-4">Think like a dog</h2>
