@@ -20,7 +20,7 @@
     "@nuxtjs/axios": "^5.8.0",
     "dotenv": "^8.2.0",
     "mailgun-js": "^0.22.0",
-    "nuxt": "^2.10.2",
+    "nuxt": "^3.0.0",
     "nuxt-fontawesome": "^0.4.0",
     "vue-cookieconsent-component": "^1.2.0",
     "vue-if-bot": "^1.2.0",
